@@ -18,7 +18,7 @@ Do not read or print `telegram-assistant/.env`.
 
 Build these layers:
 
-1. `config`: load `.env`, `C:/Users/xiang/.alibaba/keys.env`, and process env; parse `settings.json`; expose redaction helpers.
+1. `config`: load `.env`, `~/.alibaba/keys.env`, and process env; parse `settings.json`; expose redaction helpers.
 2. `telegram app`: create a `python-telegram-bot` `Application`, register commands, run long polling.
 3. `access gate`: owner id always allowed; optional user/chat allowlists; ignore untrusted group messages.
 4. `trigger gate`: in groups, act only on bot mention or reply unless the user explicitly wants every message.
@@ -51,7 +51,7 @@ BotFather instructions to give:
 1. Open Telegram and message `@BotFather`.
 2. Send `/newbot`.
 3. Choose a display name and a username ending in `bot`.
-4. Put the token in `.env` or `C:/Users/xiang/.alibaba/keys.env`; never paste it in chat.
+4. Put the token in `.env` or `~/.alibaba/keys.env`; never paste it in chat.
 5. For groups, run `/setprivacy`, select the bot, and disable privacy if contextual group reading is needed.
 
 Official references to consult for details:

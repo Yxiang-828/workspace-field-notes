@@ -158,7 +158,6 @@ def _load_env() -> dict[str, str]:
     merged: dict[str, str] = {}
     candidates = [
         Path.home() / ".alibaba" / "keys.env",
-        Path("C:/Users/xiang/.alibaba/keys.env"),
         ROOT / ".env",
     ]
     seen: set[str] = set()
@@ -252,7 +251,7 @@ def validate_config() -> list[str]:
     if not BOT_TOKEN:
         problems.append(
             f"{TOKEN_ENV} is missing. Create a bot in Telegram with @BotFather, then put the token in .env "
-            "or C:/Users/xiang/.alibaba/keys.env. Do not paste the token in chat."
+            "or ~/.alibaba/keys.env. Do not paste the token in chat."
         )
     if SETTINGS.get("owner_required", True) and not OWNER_ID:
         problems.append(
@@ -794,7 +793,7 @@ def build_files(args: argparse.Namespace) -> dict[str, str]:
     }
     env_example = f'''
     # Telegram bot token from @BotFather. Do not paste real tokens in chat.
-    # If C:/Users/xiang/.alibaba/keys.env already has TSUKUMO_TG_BOT_TOKEN,
+    # If ~/.alibaba/keys.env already has TSUKUMO_TG_BOT_TOKEN,
     # the generated bot can use that as a fallback.
     {args.token_env}=
 

@@ -12,6 +12,9 @@ This is a public export of reusable work from a long-running Windows agent works
 | HTML slide decks | A themeable deck scaffold and PNG export through headless Chrome | [html-deck](skills/html-deck/SKILL.md) |
 | Video editing | An explicit editorial decision log, timelines, and ffmpeg render helpers | [video-editor](skills/video-editor/SKILL.md) |
 | Interface craft | A design and motion workflow with a static project checker | [motion-ui-workbench](skills/motion-ui-workbench/SKILL.md) |
+| Network forensics | Distinguish a dead host from a route, link, or service failure | [host-liveness-forensics](skills/host-liveness-forensics/SKILL.md) |
+| Image production | A local CLI workflow for bespoke imagery | [image-gen](skills/image-gen/SKILL.md) |
+| Maps API | Small, explicit requests for geocoding, places, routes, and weather | [google-maps-platform](skills/google-maps-platform/SKILL.md) |
 
 Each `SKILL.md` is an agent-facing operating guide. The scripts and templates beside it are ordinary source files. Read a skill's dependencies and setup before running its scripts. The video tools require ffmpeg and local source media; the Qwen voice helper additionally requires a separately supplied Docker image and voice library (`QWEN_VOICE_DIR`). The export contains no model weights, voices, recordings, credentials, runtime state, or generated media.
 

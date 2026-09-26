@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Maps Platform"
+  short_description: "Use Google Maps APIs safely from env keys"
+  default_prompt: "Use $google-maps-platform to geocode an address, search places, or compute a route with my Maps API key."

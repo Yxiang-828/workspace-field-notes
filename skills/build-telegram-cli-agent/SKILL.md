@@ -10,7 +10,7 @@ Build a real Telegram long-polling bot project that fronts a selected CLI pipeli
 ## Core Rules
 
 - Build the runnable project unless the user explicitly asks only for advice.
-- Load runtime secrets from the target `.env`, process env, and `C:/Users/xiang/.alibaba/keys.env`; never print, echo, log, or paste secret values.
+- Load runtime secrets from the target `.env`, process env, and `~/.alibaba/keys.env`; never print, echo, log, or paste secret values.
 - Use the local `telegram-assistant/` project as the reference pattern when it exists, but do not read its real `.env`.
 - Stop before claiming completion if the Telegram bot token or owner identity is missing.
 - Prefer long polling for local Windows machines; do not require public webhooks unless the user asks for production hosting.
@@ -31,10 +31,10 @@ Build a real Telegram long-polling bot project that fronts a selected CLI pipeli
    - If `telegram-assistant/` exists in the workspace, inspect `README.md`, `.env.example`, `bot/config.py`, `bot/app.py`, and `bot/dispatch.py` for local conventions.
 
 3. Apply the BotFather stop gate.
-   - If no usable token is available by env name, target `.env`, or `C:/Users/xiang/.alibaba/keys.env`, stop and tell the user:
+   - If no usable token is available by env name, target `.env`, or `~/.alibaba/keys.env`, stop and tell the user:
      1. Open Telegram and message `@BotFather`.
      2. Send `/newbot`, choose a display name, then choose a username ending in `bot`.
-     3. Put the token in the target project `.env` as `TELEGRAM_BOT_TOKEN=...`, or in `C:/Users/xiang/.alibaba/keys.env` as `TSUKUMO_TG_BOT_TOKEN=...`.
+     3. Put the token in the target project `.env` as `TELEGRAM_BOT_TOKEN=...`, or in `~/.alibaba/keys.env` as `TSUKUMO_TG_BOT_TOKEN=...`.
      4. Do not paste the token into chat.
      5. If the bot must read group context, use `@BotFather` `/setprivacy`, select the bot, and disable privacy.
    - If `OWNER_TELEGRAM_ID` is missing, scaffold the project if useful, but tell the user to start the bot, DM it `/whoami`, put the numeric id in `.env`, and restart before using owner-only features.
@@ -77,4 +77,4 @@ Use `scripts/scaffold_telegram_cli_agent.py` for the standard Python implementat
 - `config/allowed.json` for user/chat allowlists.
 - `.env.example`, `requirements.txt`, `.gitignore`, and `run.ps1`.
 
-The generated bot loads `C:/Users/xiang/.alibaba/keys.env` automatically and falls back to `TSUKUMO_TG_BOT_TOKEN` for the Telegram token, while still allowing project-specific `.env` overrides. It exposes owner-only `/worker` to list or switch between `codex`, `claude`, `agy-flash-high`, `agy-pro-high`, and any custom pipeline generated with `--pipeline`.
+The generated bot loads `~/.alibaba/keys.env` automatically and falls back to `TSUKUMO_TG_BOT_TOKEN` for the Telegram token, while still allowing project-specific `.env` overrides. It exposes owner-only `/worker` to list or switch between `codex`, `claude`, `agy-flash-high`, `agy-pro-high`, and any custom pipeline generated with `--pipeline`.

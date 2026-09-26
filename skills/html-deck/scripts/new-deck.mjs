@@ -37,7 +37,7 @@ const slides = [
     <h1 class="title">${title.replace(/&/g,'&amp;')} <em>—</em></h1>
     <p class="sub">One-line thesis. Replace this. Lead with the image; keep words few.</p>
   </div>
-  <div class="brandline">YAO XIANG</div><div class="slide-no">01</div>`, 'image-hero')],
+  <div class="brandline">YOUR NAME</div><div class="slide-no">01</div>`, 'image-hero')],
 
   // 02 — feature: slim icon-bullet column + BIG image
   ['02-feature', slidePage('02-feature', `  <div class="feature">

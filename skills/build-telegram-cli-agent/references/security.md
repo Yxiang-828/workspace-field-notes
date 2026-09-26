@@ -4,7 +4,7 @@ Telegram-to-CLI bots bridge chat input into local machine execution. Treat that 
 
 ## Secret Handling
 
-- Never print or quote values from `.env`, process env, or `C:/Users/xiang/.alibaba/keys.env`.
+- Never print or quote values from `.env`, process env, or `~/.alibaba/keys.env`.
 - Log env variable names only.
 - Redact values for keys containing `TOKEN`, `KEY`, `SECRET`, `PASSWORD`, or `PAT`.
 - Keep `.env` gitignored.
