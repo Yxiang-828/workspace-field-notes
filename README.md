@@ -20,6 +20,8 @@ Each `SKILL.md` is an agent-facing operating guide. The scripts and templates be
 
 ## Lessons behind the tools
 
+The fuller account is in [LESSONS.md](LESSONS.md). These are the rules that recurred most often:
+
 1. Durable behavior belongs in the host program. A reminder or backup that only exists in an agent's prompt disappears on a restart.
 2. Publish only a checked state. Run the project's actual quality gate and scan staged files for secrets before any automated Git push.
 3. Preserve decisions as data. Video edits, scheduled work, and audits need a record of *why* a choice was made, not only the final artifact.
