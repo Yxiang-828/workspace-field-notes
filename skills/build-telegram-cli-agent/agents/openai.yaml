@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Telegram CLI Agent"
+  short_description: "Build Telegram bots for local CLI pipelines"
+  default_prompt: "Use $build-telegram-cli-agent to create a Telegram bot that runs my selected local CLI pipeline safely."

@@ -1,0 +1,26 @@
+{
+  "music": "<absolute path to song.mp3>",
+  "beatmap": null,
+  "output": { "w": 1920, "h": 1080, "fps": 30, "file": "<absolute output path>" },
+  "clips": [],
+  "clips_dir": "<folder of clips, or list them in 'clips'>",
+  "start": 0,
+  "duration": 30,
+  "grid": "beat",
+  "pace": true,
+  "min_cut": 0.28,
+  "shuffle": true,
+  "seed": 7,
+  "effects": {
+    "zoom_punch": true,
+    "flash": "drop",
+    "hit": true,
+    "shake": "drop",
+    "rgb": "drop",
+    "slowmo": true,
+    "grade": "cinematic",
+    "vignette": true,
+    "grain": false
+  },
+  "captions": []
+}

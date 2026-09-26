@@ -1,0 +1,4 @@
+/* mono — terminal / engineering. Near-black + signal green. Dark. */
+:root{--bg:#0a0a0a;--surface:#121212;--surface-2:#1a1a1a;--border:#2a2a2a;
+--accent:#5cff9d;--accent2:#9d9d9d;--accent3:#ffffff;--accent4:#ffd166;--text:#f2f2f2;--muted:#9a9a9a;
+--serif:'DM Mono',monospace;}

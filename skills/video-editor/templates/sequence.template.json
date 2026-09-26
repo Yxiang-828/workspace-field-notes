@@ -1,0 +1,16 @@
+{
+  "output": { "w": 1080, "h": 1920, "fps": 30, "file": "<absolute output path>" },
+  "music": "<absolute path to song.mp3 or null>",
+  "music_vol": 0.85,
+  "music_drop": null,
+  "align_beat": null,
+  "music_start": null,
+  "grade": "cinematic",
+  "vignette": true,
+  "beats": [
+    { "card": "TITLE", "sub": "subtitle", "dur": 2.0, "fx": ["flash"] },
+    { "src": "<clip.mp4>", "in": 0, "dur": 2.5, "crop": "center", "speed": 1.0, "text": "caption", "fx": ["punch"], "sfx": null },
+    { "src": "<still.jpg>", "dur": 1.8, "text": "caption", "fx": ["kenburns"] },
+    { "credits": ["line 1", "line 2"], "dur": 3.0 }
+  ]
+}

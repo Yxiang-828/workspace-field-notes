@@ -1,0 +1,11 @@
+{
+  "output": "<absolute output path>",
+  "w": 1920,
+  "h": 1080,
+  "fps": 30,
+  "voice": "0_intro",
+  "music": null,
+  "beats": [
+    { "vo": "First line of narration.", "visual": "<stock video/gif/image path or search>", "text": "On-screen caption", "sfx": null, "pad": 0.3 }
+  ]
+}

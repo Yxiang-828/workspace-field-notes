@@ -1,0 +1,9 @@
+{
+  "source": "<absolute path to source recording>",
+  "output": { "w": 1920, "h": 1080, "fps": 30, "file": "<absolute output path>" },
+  "music": null,
+  "cuts": [],
+  "markers": [],
+  "inserts": [],
+  "transitions": null
+}

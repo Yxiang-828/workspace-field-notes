@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+node_modules/
+.env
+*.log
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.zip
+*.7z

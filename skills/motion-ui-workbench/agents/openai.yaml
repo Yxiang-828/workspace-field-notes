@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion UI Workbench"
+  short_description: "Design and present polished digital products"
+  default_prompt: "Use $motion-ui-workbench to design, present, and verify a distinctive digital product across its interface, motion, screenshots, and repository surfaces."

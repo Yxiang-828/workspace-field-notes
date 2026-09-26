@@ -1,0 +1,10 @@
+{
+  "name": "html-deck",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Adaptable HTML slide decks: themeable 16:9 pages, per-slide media folders, zero-loss PNG export for Google Slides.",
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}
